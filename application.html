@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulario de registro al programa Brasa Points de Brasaland."
+    />
+    <title>Application | Brasa Points</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ember: {
+                50: "#fff6ef",
+                100: "#ffe6d5",
+                500: "#ff6b2d",
+                700: "#c9481f",
+                900: "#5f1f12"
+              },
+              coal: "#1a1615",
+              smoke: "#f4efe8"
+            },
+            fontFamily: {
+              display: ["Bebas Neue", "sans-serif"],
+              body: ["Manrope", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="font-body bg-smoke text-coal antialiased">
+    <main role="main" class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+      <header role="banner" class="rounded-3xl bg-gradient-to-br from-ember-900 via-ember-700 to-ember-500 p-6 text-white sm:p-8 md:grid md:grid-cols-2 md:items-center md:gap-6 lg:p-10">
+        <article>
+        <a href="index.html" class="inline-flex items-center" aria-label="Volver a la landing principal">
+          <img
+            src="assets/BrasalandK.png"
+            alt="Logo de Brasaland con una carne en brasas"
+            class="h-12 w-auto sm:h-14"
+          />
+        </a>
+        <h1 class="mt-3 font-display text-5xl uppercase leading-none sm:text-6xl">Application Brasa Points</h1>
+        <p class="mt-3 text-sm text-amber-50 sm:text-base">
+          Completa el formulario para crear tu cuenta digital y empezar a acumular puntos.
+        </p>
+        <a href="index.html" class="mt-5 inline-flex rounded-full bg-white px-5 py-2.5 text-sm font-bold text-ember-700"
+          aria-label="Volver a la landing principal"
+          >Volver al inicio</a
+        >
+        </article>
+        <figure class="mt-6 md:mt-0" role="img" aria-label="Imagen de tarjeta digital del programa Brasa Points">
+          <img
+            src="assets/form-brasa.svg"
+            alt="Tarjeta digital de Brasa Points que representa el registro en linea"
+            class="w-full rounded-2xl border border-white/20 bg-white/10 p-1"
+            loading="lazy"
+          />
+        </figure>
+      </header>
+
+      <section aria-label="Mensaje informativo de pedidos" class="mt-5 rounded-3xl border border-ember-200 bg-ember-50 p-4 text-sm text-ember-900 sm:text-base">
+        <p>
+          <span class="font-bold">Aviso:</span>
+          ¿Quieres hacer un pedido? Llama a tu ubicación favorita o visítanos directamente. ¡Pronto tendremos pedidos en línea!
+        </p>
+      </section>
+
+      <section aria-labelledby="registro-titulo" class="mt-5 rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7 lg:p-8">
+        <h2 id="registro-titulo" class="font-display text-4xl uppercase text-ember-700">Formulario de registro</h2>
+        <form id="application-form" class="mt-4 grid gap-5 md:gap-6" novalidate aria-describedby="form-ayuda">
+          <p id="form-ayuda" class="text-xs text-coal/70 sm:text-sm">Los campos marcados con * son obligatorios.</p>
+
+          <fieldset class="grid gap-4 md:gap-5">
+            <legend class="text-sm font-bold text-coal/80">Datos personales</legend>
+
+          <div>
+            <label for="fullName" class="mb-1 block text-sm font-bold">Nombre completo *</label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              required
+              autocomplete="name"
+              class="w-full rounded-xl border border-coal/20 px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+              placeholder="Ej: Juan Perez"
+            />
+            <p id="fullName-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-5">
+            <div>
+              <label for="email" class="mb-1 block text-sm font-bold">Email *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                class="w-full rounded-xl border border-coal/20 px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+                placeholder="nombre@correo.com"
+              />
+              <p id="email-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="phone" class="mb-1 block text-sm font-bold">Telefono *</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                inputmode="numeric"
+                class="w-full rounded-xl border border-coal/20 px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+                placeholder="+57 300 123 4567"
+              />
+              <p id="phone-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+          </div>
+          </fieldset>
+
+          <fieldset class="grid gap-4 md:gap-5">
+            <legend class="text-sm font-bold text-coal/80">Ubicaci&oacute;n</legend>
+
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-5">
+            <div>
+              <label for="country" class="mb-1 block text-sm font-bold">Pais *</label>
+              <select
+                id="country"
+                name="country"
+                required
+                aria-label="Seleccionar pais"
+                class="w-full rounded-xl border border-coal/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+              >
+                <option value="">Selecciona tu país</option>
+                <option value="CO">Colombia</option>
+                <option value="US">Estados Unidos</option>
+              </select>
+              <p id="country-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="city" class="mb-1 block text-sm font-bold">Ciudad *</label>
+              <select
+                id="city"
+                name="city"
+                required
+                aria-label="Seleccionar ciudad"
+                class="w-full rounded-xl border border-coal/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200 disabled:cursor-not-allowed disabled:bg-zinc-100"
+                disabled
+              >
+                <option value="">Selecciona tu ciudad</option>
+              </select>
+              <p id="city-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div>
+            <label for="favoriteLocation" class="mb-1 block text-sm font-bold">Ubicación favorita de Brasaland</label>
+            <select
+              id="favoriteLocation"
+              name="favoriteLocation"
+              aria-label="Seleccionar ubicacion favorita"
+              class="w-full rounded-xl border border-coal/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200 disabled:cursor-not-allowed disabled:bg-zinc-100"
+              disabled
+            >
+                <option value="">Selecciona una ubicación (opcional)</option>
+            </select>
+          </div>
+          </fieldset>
+
+          <fieldset class="rounded-2xl border border-coal/10 bg-smoke p-5" aria-label="Preferencias alimentarias">
+            <legend class="px-1 text-sm font-bold">Preferencias alimentarias</legend>
+            <div class="mt-2 grid gap-2 text-sm sm:grid-cols-2">
+              <div class="inline-flex items-center gap-2">
+                <input id="dietary-none" type="checkbox" name="dietary" value="Sin restricciones" />
+                <label for="dietary-none">Sin restricciones</label>
+              </div>
+              <div class="inline-flex items-center gap-2">
+                <input id="dietary-vegetarian" type="checkbox" name="dietary" value="Vegetariano" />
+                <label for="dietary-vegetarian">Vegetariano</label>
+              </div>
+              <div class="inline-flex items-center gap-2">
+                <input id="dietary-glutenfree" type="checkbox" name="dietary" value="Sin gluten" />
+                <label for="dietary-glutenfree">Sin gluten</label>
+              </div>
+              <div class="inline-flex items-center gap-2">
+                <input id="dietary-other" type="checkbox" name="dietary" value="Otro" />
+                <label for="dietary-other">Otro</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="grid gap-4 md:gap-5">
+            <legend class="text-sm font-bold text-coal/80">Conocimiento y verificaci&oacute;n</legend>
+
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-5">
+            <div>
+              <label for="source" class="mb-1 block text-sm font-bold">&iquest;C&oacute;mo nos conociste? *</label>
+              <select
+                id="source"
+                name="source"
+                required
+                aria-label="Seleccionar como conociste Brasaland"
+                class="w-full rounded-xl border border-coal/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+              >
+                <option value="">Selecciona una opcion</option>
+                <option value="Redes sociales">Redes sociales</option>
+                <option value="Recomendación">Recomendación</option>
+                <option value="Pasando por el local">Pasando por el local</option>
+                <option value="Búsqueda en internet">Búsqueda en internet</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <p id="source-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="birthDate" class="mb-1 block text-sm font-bold">Fecha de nacimiento *</label>
+              <input
+                id="birthDate"
+                name="birthDate"
+                type="date"
+                required
+                aria-label="Seleccionar fecha de nacimiento"
+                class="w-full rounded-xl border border-coal/20 px-4 py-3 text-sm outline-none transition focus:border-ember-500 focus:ring-2 focus:ring-ember-200"
+              />
+              <p id="birthDate-error" class="mt-1 hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+            </div>
+          </div>
+          </fieldset>
+
+          <div class="grid gap-2" role="group" aria-label="Consentimientos">
+            <div class="inline-flex items-start gap-2 text-sm">
+              <input id="terms" name="terms" type="checkbox" class="mt-1" required />
+              <label for="terms">Acepto términos del programa *</label>
+            </div>
+            <p id="terms-error" class="hidden rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-xs font-semibold text-red-700" role="alert" aria-live="polite"></p>
+
+            <div class="inline-flex items-start gap-2 text-sm">
+              <input id="offers" name="offers" type="checkbox" class="mt-1" />
+              <label for="offers">Quiero recibir ofertas por email</label>
+            </div>
+          </div>
+
+          <div class="mt-2 grid gap-3 sm:flex sm:items-center sm:justify-start">
+            <button
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded-full bg-ember-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-ember-700 focus:outline-none focus:ring-2 focus:ring-ember-300 focus:ring-offset-2 sm:w-auto"
+            >
+              Enviar registro
+            </button>
+            <button
+              type="reset"
+              class="inline-flex w-full items-center justify-center rounded-full border border-coal/20 bg-white px-6 py-3 text-sm font-bold text-coal transition hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-300 focus:ring-offset-2 sm:w-auto"
+            >
+              Limpiar formulario
+            </button>
+          </div>
+
+          <div id="success-message" class="hidden rounded-2xl border border-green-200 bg-green-50 p-4 text-sm text-green-900 sm:text-base" role="status" aria-live="polite">
+            <p class="font-bold">&iexcl;Bienvenido a Brasa Points!</p>
+            <p class="mt-2">
+              Tu registro ha sido exitoso. Recibirás un email de confirmación en los próximos minutos con los detalles de tu cuenta y cómo empezar a acumular puntos.
+            </p>
+            <p class="mt-2">&iexcl;Ya puedes disfrutar de tus beneficios en cualquiera de nuestras 14 ubicaciones!</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="validation.js"></script>
+  </body>
+</html>

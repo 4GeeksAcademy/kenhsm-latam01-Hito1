@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brasaland: cadena de restaurantes de comida a la brasa en Colombia y Estados Unidos." />
+    <title>Brasaland | Restaurante de comida a la brasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ember: {
+                50: "#fff6ef",
+                100: "#ffe6d5",
+                500: "#ff6b2d",
+                700: "#c9481f",
+                900: "#5f1f12"
+              },
+              coal: "#1a1615",
+              smoke: "#f4efe8"
+            },
+            fontFamily: {
+              display: ["Bebas Neue", "sans-serif"],
+              body: ["Manrope", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Brasaland",
+        "description": "Cadena de restaurantes de comida a la brasa en Colombia y Estados Unidos",
+        "url": "https://brasaland.com",
+        "foundingDate": "2008",
+        "servesCuisine": "Grilled food, Colombian cuisine",
+        "priceRange": "$$",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "addressCountry": "CO",
+            "addressLocality": "Medellin",
+            "addressRegion": "Antioquia"
+          },
+          {
+            "@type": "PostalAddress",
+            "addressCountry": "US",
+            "addressLocality": "Miami",
+            "addressRegion": "FL"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+57-4-123-4567",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "sameAs": [
+          "https://instagram.com/brasaland",
+          "https://facebook.com/brasaland"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Brasaland",
+        "url": "https://brasaland.com",
+        "logo": "https://brasaland.com/assets/BrasalandK.png",
+        "description": "Cadena de restaurantes de comida a la brasa en Colombia y Estados Unidos",
+        "foundingDate": "2008",
+        "sameAs": [
+          "https://instagram.com/brasaland",
+          "https://facebook.com/brasaland"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+57 4 123 4567",
+            "availableLanguage": ["Spanish", "English"],
+            "areaServed": "CO"
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+1 305 123 4567",
+            "availableLanguage": ["Spanish", "English"],
+            "areaServed": "US"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="font-body bg-smoke text-coal antialiased">
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-ember-100 blur-3xl md:h-96 md:w-96"></div>
+      <div class="pointer-events-none absolute -right-24 top-72 h-64 w-64 rounded-full bg-orange-100 blur-3xl md:h-80 md:w-80"></div>
+
+      <header role="banner" class="relative z-10 mx-auto max-w-6xl px-4 pt-5 sm:px-6 lg:px-8">
+        <div class="rounded-2xl border border-white/70 bg-white/90 p-4 shadow-lg shadow-ember-100/40 backdrop-blur">
+          <div class="flex flex-col gap-3 md:gap-4">
+            <div class="flex items-center justify-between gap-4">
+              <a href="#inicio" class="inline-flex items-center" aria-label="Ir al inicio de Brasaland">
+                <img
+                  src="assets/BrasalandK.png"
+                  alt="Logo de Brasaland con una carne en brasas"
+                  class="h-10 w-auto md:h-12"
+                />
+              </a>
+              <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
+                <a href="#" class="rounded-full bg-ember-500 px-3 py-1 text-white" aria-current="true">ES</a>
+                <a href="#" class="rounded-full border border-ember-300 px-3 py-1 text-ember-700">EN</a>
+              </div>
+            </div>
+
+            <nav aria-label="Navegaci&oacute;n principal" role="navigation" class="overflow-x-auto">
+              <ul class="flex min-w-max items-center gap-2 pb-1 text-sm font-semibold">
+                <li><a href="#inicio" class="rounded-full bg-coal px-4 py-2 text-white">Inicio</a></li>
+                <li><a href="#ubicaciones" class="rounded-full border border-coal/20 bg-white px-4 py-2">Ubicaciones</a></li>
+                <li><a href="#menu" class="rounded-full border border-coal/20 bg-white px-4 py-2">Men&uacute;</a></li>
+                <li><a href="#brasa-points" class="rounded-full border border-coal/20 bg-white px-4 py-2">Brasa Points</a></li>
+                <li><a href="#contacto" class="rounded-full border border-coal/20 bg-white px-4 py-2">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main role="main" class="relative z-10 mx-auto flex max-w-6xl flex-col gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+        <section
+          id="inicio"
+          aria-labelledby="inicio-titulo"
+          class="overflow-hidden rounded-3xl bg-gradient-to-br from-ember-900 via-ember-700 to-ember-500 p-6 text-white shadow-xl shadow-ember-900/20 sm:p-8 md:grid md:grid-cols-2 md:items-center md:gap-6 lg:p-10"
+        >
+          <article>
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-amber-200">Desde 2008</p>
+            <h2 id="inicio-titulo" class="font-display text-5xl uppercase leading-none sm:text-7xl">El sabor de la brasa, en cada bocado</h2>
+            <p class="mt-4 max-w-2xl text-sm text-amber-50 sm:text-base">
+              Desde 2008 sirviendo las mejores carnes a la brasa en Colombia y Estados Unidos. 14 ubicaciones, una misma
+              pasi&oacute;n por la calidad y el sabor.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="application.html" class="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-ember-700">&Uacute;nete a Brasa Points</a>
+              <a href="#ubicaciones" class="rounded-full border border-white/70 px-5 py-2.5 text-sm font-bold text-white">Ver ubicaciones</a>
+            </div>
+          </article>
+          <figure class="mt-6 md:mt-0" role="img" aria-label="Ilustraci&oacute;n de una parrilla encendida de Brasaland">
+            <img
+              src="assets/hero-brasa.svg"
+              alt="Parrilla encendida con carnes a la brasa representando la experiencia Brasaland"
+              class="w-full rounded-2xl border border-white/20 bg-white/10 p-1"
+              loading="lazy"
+            />
+          </figure>
+        </section>
+
+        <section
+          aria-label="Historia de Brasaland"
+          class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7 md:grid md:grid-cols-2 md:items-center md:gap-6"
+        >
+          <article>
+            <h2 class="font-display text-4xl uppercase text-ember-700">Nuestra historia</h2>
+            <p class="mt-3 text-sm text-coal/80 sm:text-base">
+              Fundada en Medell&iacute;n en 2008, Brasaland comenz&oacute; como un sue&ntilde;o familiar para compartir el sabor
+              de la carne a la brasa con calidad constante y servicio c&aacute;lido. Hoy somos 14 restaurantes en dos pa&iacute;ses,
+              manteniendo productos frescos, t&eacute;cnica tradicional y pasi&oacute;n por cada plato.
+            </p>
+          </article>
+          <figure class="mt-5 md:mt-0" role="img" aria-label="Imagen decorativa de la propuesta de Brasaland">
+            <img
+              src="assets/form-brasa.svg"
+              alt="Tarjeta digital Brasa Points como parte de la transformacion digital de Brasaland"
+              class="w-full rounded-2xl border border-coal/10"
+              loading="lazy"
+            />
+          </figure>
+        </section>
+
+        <section aria-label="Lo que nos hace unicos" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 class="font-display text-4xl uppercase text-ember-700">Lo que nos hace unicos</h2>
+          <div class="mt-4 grid gap-3 md:grid-cols-3">
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Calidad consistente</h3>
+              <ul class="mt-2 space-y-1 text-sm text-coal/70">
+                <li>Mismas recetas y estandares en todos los locales.</li>
+                <li>Ingredientes frescos seleccionados diariamente.</li>
+              </ul>
+            </article>
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Experiencia calida</h3>
+              <ul class="mt-2 space-y-1 text-sm text-coal/70">
+                <li>Servicio amable y atento.</li>
+                <li>Ambiente familiar en cada visita.</li>
+              </ul>
+            </article>
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Rapidez</h3>
+              <ul class="mt-2 space-y-1 text-sm text-coal/70">
+                <li>Tu comida lista en minutos.</li>
+                <li>Sin sacrificar sabor ni calidad.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="ubicaciones" aria-labelledby="ubicaciones-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="ubicaciones-titulo" class="font-display text-4xl uppercase text-ember-700">Ubicaciones</h2>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-2 lg:gap-4">
+            <article class="rounded-2xl bg-smoke p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ember-700">Colombia</p>
+              <h3 class="mt-2 text-lg font-extrabold">Medellin, Antioquia</h3>
+            </article>
+            <article class="rounded-2xl bg-smoke p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ember-700">Estados Unidos</p>
+              <h3 class="mt-2 text-lg font-extrabold">Miami, FL</h3>
+            </article>
+          </div>
+        </section>
+
+        <section id="menu" aria-labelledby="menu-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="menu-titulo" class="font-display text-4xl uppercase text-ember-700">Men&uacute;</h2>
+          <p class="mt-3 text-sm text-coal/80 sm:text-base">Especialidades a la brasa, cortes premium, combos familiares y clasicos de cocina colombiana.</p>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:gap-4">
+            <article class="rounded-2xl border border-ember-200 bg-ember-50 p-4">
+              <h3 class="text-base font-extrabold">Parrilla Signature</h3>
+              <p class="mt-1 text-sm text-coal/70">Cortes jugosos y marinados de la casa.</p>
+            </article>
+            <article class="rounded-2xl border border-ember-200 bg-ember-50 p-4">
+              <h3 class="text-base font-extrabold">Pollo a la Brasa</h3>
+              <p class="mt-1 text-sm text-coal/70">Sazon colombiana con coccion lenta.</p>
+            </article>
+            <article class="rounded-2xl border border-ember-200 bg-ember-50 p-4">
+              <h3 class="text-base font-extrabold">Combos Familiares</h3>
+              <p class="mt-1 text-sm text-coal/70">Porciones generosas para compartir.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="caracteristicas" aria-labelledby="caracteristicas-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="caracteristicas-titulo" class="font-display text-4xl uppercase text-ember-700">Caracteristicas</h2>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Calidad consistente</h3>
+              <p class="mt-1 text-sm text-coal/70">Mismas recetas y estandares en todas nuestras ubicaciones.</p>
+            </article>
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Experiencia calida</h3>
+              <p class="mt-1 text-sm text-coal/70">Servicio atento y ambiente familiar en cada visita.</p>
+            </article>
+            <article class="rounded-2xl bg-smoke p-4">
+              <h3 class="text-base font-extrabold">Rapidez</h3>
+              <p class="mt-1 text-sm text-coal/70">Tu comida lista en minutos sin sacrificar sabor.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="beneficios" aria-labelledby="beneficios-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="beneficios-titulo" class="font-display text-4xl uppercase text-ember-700">Beneficios</h2>
+          <ul class="mt-4 grid gap-3 text-sm sm:grid-cols-2 sm:text-base md:gap-4">
+            <li class="rounded-2xl bg-ember-50 p-4">Acumula 1 punto por cada $10.000 COP o $5 USD en Brasa Points.</li>
+            <li class="rounded-2xl bg-ember-50 p-4">Canjea tus puntos por descuentos y platos gratis.</li>
+            <li class="rounded-2xl bg-ember-50 p-4">Recibe ofertas exclusivas por ser miembro del programa.</li>
+            <li class="rounded-2xl bg-ember-50 p-4">Registro 100% digital, sin tarjetas fisicas.</li>
+          </ul>
+        </section>
+
+        <section id="como-funciona" aria-labelledby="como-funciona-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="como-funciona-titulo" class="font-display text-4xl uppercase text-ember-700">Como funciona</h2>
+          <ol class="mt-4 grid gap-3 text-sm sm:grid-cols-2 sm:text-base md:grid-cols-3 md:gap-4">
+            <li class="rounded-2xl bg-smoke p-4"><span class="font-bold">1.</span> Registrate en Brasa Points en menos de 2 minutos.</li>
+            <li class="rounded-2xl bg-smoke p-4"><span class="font-bold">2.</span> Escanea tu compra y acumula puntos en cada visita.</li>
+            <li class="rounded-2xl bg-smoke p-4"><span class="font-bold">3.</span> Canjea recompensas en cualquiera de nuestras 14 ubicaciones.</li>
+          </ol>
+        </section>
+
+        <section id="experiencia" aria-labelledby="experiencia-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="experiencia-titulo" class="font-display text-4xl uppercase text-ember-700">Experiencia</h2>
+          <p class="mt-3 text-sm text-coal/80 sm:text-base">
+            En Brasaland combinamos tradicion parrillera, ingredientes frescos y un servicio cercano para que cada comida
+            sea una experiencia memorable, tanto en Colombia como en Florida.
+          </p>
+        </section>
+
+        <section id="brasa-points" aria-labelledby="brasa-points-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="brasa-points-titulo" class="font-display text-4xl uppercase text-ember-700">Brasa Points</h2>
+          <p class="mt-3 text-sm text-coal/80 sm:text-base">Acumula puntos en cada visita y canjealos por productos, upgrades y beneficios exclusivos.</p>
+          <div class="mt-4 rounded-2xl bg-coal p-4 text-white">
+            <p class="text-sm leading-relaxed">Registrate gratis, escanea tu compra y desbloquea recompensas desde tu primera orden.</p>
+          </div>
+          <a
+            href="application.html"
+            class="mt-4 inline-flex rounded-full bg-ember-500 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-ember-700"
+            >Ir al formulario de aplicaci&oacute;n</a
+          >
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-titulo" class="rounded-3xl border border-coal/10 bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="contacto-titulo" class="font-display text-4xl uppercase text-ember-700">Contacto</h2>
+          <div class="mt-4 grid gap-3 text-sm sm:grid-cols-2 sm:text-base">
+            <p class="rounded-2xl bg-smoke p-4"><span class="font-bold">Telefono:</span> +57-4-123-4567</p>
+            <p class="rounded-2xl bg-smoke p-4"><span class="font-bold">Idiomas:</span> Espanol, English</p>
+          </div>
+        </section>
+      </main>
+
+      <footer role="contentinfo" class="relative z-10 border-t border-coal/10 bg-white/80">
+        <div class="mx-auto grid max-w-6xl gap-4 px-4 py-6 sm:grid-cols-2 sm:px-6 lg:px-8">
+          <section aria-labelledby="footer-contacto-titulo" class="rounded-2xl bg-smoke p-4">
+            <h2 id="footer-contacto-titulo" class="font-display text-3xl uppercase text-ember-700">Contacto</h2>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base">
+              <li><span class="font-bold">Email:</span> <a href="mailto:hola@brasaland.com" class="underline decoration-ember-500 underline-offset-2">hola@brasaland.com</a></li>
+              <li><span class="font-bold">Colombia:</span> +57 4 123 4567</li>
+              <li><span class="font-bold">Florida:</span> +1 305 123 4567</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="footer-redes-titulo" class="rounded-2xl bg-smoke p-4">
+            <h2 id="footer-redes-titulo" class="font-display text-3xl uppercase text-ember-700">Redes</h2>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm font-bold sm:text-base">
+              <a href="https://instagram.com/brasaland" rel="noopener noreferrer" target="_blank" class="rounded-full border border-coal/20 bg-white px-4 py-2 hover:bg-ember-50">Instagram</a>
+              <a href="https://facebook.com/brasaland" rel="noopener noreferrer" target="_blank" class="rounded-full border border-coal/20 bg-white px-4 py-2 hover:bg-ember-50">Facebook</a>
+            </div>
+          </section>
+        </div>
+        <div class="border-t border-coal/10 py-3 text-center text-xs text-coal/70 sm:text-sm">
+          <p>&copy; 2025 Brasaland. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
